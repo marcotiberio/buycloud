@@ -1,5 +1,5 @@
 <?php 
-	/* Template Name: Freeze */
+	/* Template Name: Freeze Cloud */
 ?>
 
 <?php get_header(); ?>
