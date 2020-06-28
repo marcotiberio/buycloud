@@ -25,6 +25,20 @@
             </button>
           </div>
         </div>
+        <div class="info">
+          <div class="left">
+            <ul style="list-style: none;">
+              <li style="color: #FED56B;">price</li>
+              <li style="color: #FED56B;">ur_cloud</li>
+            </ul>
+          </div>
+          <div class="right" style="text-align: right;">
+            <ul style="list-style: none;">
+              <li style="color: #FED56B;"><?php the_field('price'); ?></li>
+              <li style="color: #FED56B;"><?php the_field('ur_cloud'); ?></li>
+            </ul>
+          </div>
+        </div>
         <div class="buttons">
           <button class="button" id="freeze">
             <a href="#"><p>go to payment</p></a>
