@@ -30,14 +30,14 @@
           </div>
           <div class="right" style="text-align: right;">
             <ul style="list-style: none;">
-              <li style="color: #FED56B;"><?php the_field('price_value'); ?></li>
-              <li style="color: #FED56B;"><?php the_field('ur_cloud_value'); ?></li>
-              <li style="color: lime;"><?php the_field('coordinates_value'); ?></li>
-              <li style="color: lime;"><?php the_field('wind_direction_value'); ?></li>
-              <li style="color: lime;"><?php the_field('speed_value'); ?></li>
-              <li style="color: lime;"><?php the_field('cloudiness_value'); ?></li>
-              <li style="color: lime;"><?php the_field('estimated_energy_value'); ?></li>
-              <li style="color: lime;"><?php the_field('temperature_value'); ?></li>
+              <li style="color: #FED56B;"><?php the_field('price'); ?></li>
+              <li style="color: #FED56B;"><?php the_field('ur_cloud'); ?></li>
+              <li style="color: lime;"><?php the_field('coordinates'); ?></li>
+              <li style="color: lime;"><?php the_field('wind_direction'); ?></li>
+              <li style="color: lime;"><?php the_field('speed'); ?></li>
+              <li style="color: lime;"><?php the_field('cloudiness'); ?></li>
+              <li style="color: lime;"><?php the_field('estimated_energy'); ?></li>
+              <li style="color: lime;"><?php the_field('temperature'); ?></li>
             </ul>
           </div>
         </div>
