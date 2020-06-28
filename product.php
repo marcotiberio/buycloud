@@ -18,14 +18,14 @@
         <div class="info">
           <div class="left">
             <ul style="list-style: none;">
-              <li style="color: #FED56B;"><?php the_field('price'); ?></li>
-              <li style="color: #FED56B;"><?php the_field('ur_cloud'); ?></li>
-              <li><?php the_field('coordinates'); ?></li>
-              <li><?php the_field('wind_direction'); ?></li>
-              <li><?php the_field('speed'); ?></li>
-              <li><?php the_field('cloudiness'); ?></li>
-              <li><?php the_field('estimated_energy'); ?></li>
-              <li><?php the_field('temperature'); ?></li>
+              <li style="color: #FED56B;">price</li>
+              <li style="color: #FED56B;">ur_cloud</li>
+              <li>coordinates</li>
+              <li>wind_direction</li>
+              <li>speed</li>
+              <li>cloudiness</li>
+              <li>estimated_energy</li>
+              <li>temperature</li>
             </ul>
           </div>
           <div class="right" style="text-align: right;">
