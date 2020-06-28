@@ -28,16 +28,16 @@
         <div class="info">
           <div class="left">
             <ul style="list-style: none;">
-              <li style="color: #FED56B;">price</li>
-              <li style="color: #FED56B;">ur_cloud</li>
+              <li style="color: red;">name</li>
+              <li style="color: red;">email</li>
               <li style="color: white;">We’ll use this information to create your certificate </li>
               <li style="color: white;">and send you the UR-tracking number of your cloud.</li>
             </ul>
           </div>
           <div class="right" style="text-align: right;">
             <ul style="list-style: none;">
-              <li style="color: #FED56B;"><?php the_field('price'); ?></li>
-              <li style="color: #FED56B;"><?php the_field('ur_cloud'); ?></li>
+              <li style="color: lime;"><?php the_field('price'); ?></li>
+              <li style="color: lime;"><?php the_field('ur_cloud'); ?></li>
             </ul>
           </div>
         </div>
