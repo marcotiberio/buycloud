@@ -10,41 +10,41 @@
     </div>
     <section class="main-content">
       <main>
-        <div class="cover">
-          <img src="/cloud.png" alt="" />
-        </div>
+        <?php 
+            $image = get_field('cover');
+            if( !empty( $image ) ): ?>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
         <div class="info">
           <div class="left">
             <ul style="list-style: none;">
-              <li style="color: #FED56B;">PRICE</li>
-              <li style="color: #FED56B;">UR CLOUD</li>
-              <li>coordinates</li>
-              <li>wind</li>
-              <li>direction</li>
-              <li>speed</li>
-              <li>cloudiness</li>
-              <li>estimated energy</li>
-              <li>temperature</li>
+              <li style="color: #FED56B;"><?php the_field('price'); ?></li>
+              <li style="color: #FED56B;"><?php the_field('ur_cloud'); ?></li>
+              <li><?php the_field('coordinates'); ?></li>
+              <li><?php the_field('wind_direction'); ?></li>
+              <li><?php the_field('speed'); ?></li>
+              <li><?php the_field('cloudiness'); ?></li>
+              <li><?php the_field('estimated_energy'); ?></li>
+              <li><?php the_field('temperature'); ?></li>
             </ul>
           </div>
           <div class="right" style="text-align: right;">
             <ul style="list-style: none;">
-              <li style="color: #FED56B;">€11,78</li>
-              <li style="color: #FED56B;">#18100</li>
-              <li style="color: lime;">Nº128</li>
-              <li style="color: lime;">Zº923</li>
-              <li style="color: lime;">southwest</li>
-              <li style="color: lime;">80 km/u</li>
-              <li style="color: lime;">(u) 5</li>
-              <li style="color: lime;">120.000</li>
-              <li style="color: lime;">16 ºC</li>
+              <li style="color: #FED56B;"><?php the_field('price_value'); ?></li>
+              <li style="color: #FED56B;"><?php the_field('ur_cloud_value'); ?></li>
+              <li style="color: lime;"><?php the_field('coordinates_value'); ?></li>
+              <li style="color: lime;"><?php the_field('wind_direction_value'); ?></li>
+              <li style="color: lime;"><?php the_field('speed_value'); ?></li>
+              <li style="color: lime;"><?php the_field('cloudiness_value'); ?></li>
+              <li style="color: lime;"><?php the_field('estimated_energy_value'); ?></li>
+              <li style="color: lime;"><?php the_field('temperature_value'); ?></li>
             </ul>
           </div>
         </div>
         <div class="buttons">
           <button class="button" id="manifesto"><p>read manifesto</p></button>
           <button class="button" id="freeze">
-            <a href="/freeze.html"><p>freeze cloud</p></a>
+            <a href="#"><p>freeze cloud</p></a>
           </button>
         </div>
       </main>
