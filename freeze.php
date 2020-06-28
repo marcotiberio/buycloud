@@ -23,7 +23,6 @@
             <button class="button" id="capture">
               <p>to own is to interact</p>
             </button>
-            <?php echo do_shortcode("[contact-form-7 id="77" title=""]"); ?>
           </div>
         </div>
         <div class="buttons">
