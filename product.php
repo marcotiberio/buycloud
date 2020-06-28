@@ -26,6 +26,7 @@
               <li>cloudiness</li>
               <li>estimated_energy</li>
               <li>temperature</li>
+              <li style="color: white;">Source: NOAA.com, KNMI.nl</li>
             </ul>
           </div>
           <div class="right" style="text-align: right;">
@@ -41,6 +42,7 @@
             </ul>
           </div>
         </div>
+
         <div class="buttons">
           <button class="button" id="manifesto"><p>read manifesto</p></button>
           <button class="button" id="freeze">
