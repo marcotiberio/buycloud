@@ -108,9 +108,9 @@
         captureButton.addEventListener("click", () => {
           context.drawImage(player, 0, 0, canvas.width, canvas.height);
 
-          // Stop all video streams.
-          player.srcObject.getVideoTracks().forEach(track => track.stop());
-        });
+        // Stop all video streams.
+        // player.srcObject.getVideoTracks().forEach(track => track.stop());
+        // });
 
         // Attach the video stream to the video element and autoplay.
         navigator.mediaDevices.getUserMedia(constraints).then(stream => {
