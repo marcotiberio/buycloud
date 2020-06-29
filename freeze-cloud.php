@@ -102,7 +102,7 @@
     </div>
 
     <!-- HTML2CANVAS -->
-    <script src="js/html2canvas.js"></script>
+    <script src="js/html2canvas.min.js"></script>
 
     <script>
         function getScreen() {

@@ -17,6 +17,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<!-- HTML2CANVAS -->
+    <script src="js/html2canvas.min.js"></script>
+
 	<?php wp_head(); ?>
 </head>
 
