@@ -23,7 +23,7 @@
             <p>to own is to interact</p>
           </button>
           <div>
-            <?php the_field('form'); ?>
+            <p style="color: lime;">take a picture<br>while gazing at your cloud</p>
           </div>
         </div>
         <!-- <div class="info">
