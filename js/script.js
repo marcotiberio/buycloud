@@ -1,4 +1,4 @@
-// Studio Programs Modals
+// Manifesto Modal
 $(document).ready(function(){
     $("#openManifesto").click(function(){
         $("#modalManifesto").show();

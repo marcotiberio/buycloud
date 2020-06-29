@@ -26,7 +26,7 @@
               <li>cloudiness</li>
               <li>estimated_energy</li>
               <li>temperature</li>
-              <li style="color: white; font-size: 9px;">Source: NOAA.com, KNMI.nl</li>
+              <li style="color: white; font-size: 9px; margin-top: 10px;">Source: NOAA.com, KNMI.nl</li>
             </ul>
           </div>
           <div class="right" style="text-align: right;">
@@ -46,7 +46,7 @@
         <div class="buttons">
           <button class="button" id="openManifesto"><p>read manifesto</p></button>
           <button class="button" id="freeze">
-            <a href="#"><p>freeze cloud</p></a>
+            <a href="<?php the_field('freeze_link'); ?>"><p>freeze cloud</p></a>
           </button>
         </div>
       </main>
