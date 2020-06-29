@@ -67,9 +67,6 @@
             </div>
         </div>
     </div>
-    <div class="caption" id="caption">
-        <span id="caption-text" class="border" style="text-align: center;">youtube.com/myPHPnotes</span>
-    </div>
     </section>
 
     <!-- Snapshot -->
@@ -103,6 +100,9 @@
         var dataURL = canvas.toDataURL();
       </script>
     </div>
+
+    <!-- HTML2CANVAS -->
+    <script src="js/html2canvas.js"></script>
 
     <script>
         function getScreen() {
