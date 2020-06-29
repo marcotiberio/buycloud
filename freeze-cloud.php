@@ -20,14 +20,14 @@
         </div>
         
         <div class="cloud-info">
-          <li><?php the_field('price'); ?></li>
-          <li><?php the_field('ur_cloud'); ?></li>
-          <li><?php the_field('coordinates'); ?></li>
-          <li><?php the_field('wind_direction'); ?></li>
-          <li><?php the_field('speed'); ?></li>
-          <li><?php the_field('cloudiness'); ?></li>
-          <li><?php the_field('estimated_energy'); ?></li>
-          <li><?php the_field('temperature'); ?></li>
+          <p><?php the_field('price'); ?></p>
+          <p><?php the_field('ur_cloud'); ?></p>
+          <p><?php the_field('coordinates'); ?></p>
+          <p><?php the_field('wind_direction'); ?></p>
+          <p><?php the_field('speed'); ?></p>
+          <p><?php the_field('cloudiness'); ?></p>
+          <p><?php the_field('estimated_energy'); ?></p>
+          <p><?php the_field('temperature'); ?></p>
         </div>
 
 
