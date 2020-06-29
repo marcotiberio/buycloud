@@ -33,7 +33,7 @@
                 <li style="color: red;"><label for="name">name</label></li>
                 <li style="color: red;"><label for="email">email</label></li>
                 <li style="color: red;"><label for="confirmemail">confirm email</label></li>
-                <li style="color: red;"><label for="contract">contract photo</label></li>
+                <li style="color: red;"><label for="contract">contract</label></li>
               </ul>
             </div>
             <div class="right" style="text-align: right;">
