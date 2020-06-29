@@ -19,12 +19,12 @@
           <div class="left">
             <ul style="list-style: none;">
               <li style="color: #FED56B;">price</li>
-              <li style="color: #FED56B;">ur_cloud</li>
+              <li style="color: #FED56B;">ur cloud</li>
               <li>coordinates</li>
               <li>wind_direction</li>
               <li>speed</li>
               <li>cloudiness</li>
-              <li>estimated_energy</li>
+              <li>estimated energy</li>
               <li>temperature</li>
               <li style="color: white; font-size: 9px; margin-top: 10px;">Source: NOAA.com, KNMI.nl</li>
             </ul>
