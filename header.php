@@ -18,7 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<!-- HTML2CANVAS -->
-    <script src="js/html2canvas.min.js"></script>
+    <script src="/js/html2canvas.js"></script>
 
 	<?php wp_head(); ?>
 </head>
