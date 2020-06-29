@@ -18,8 +18,8 @@
         <div class="info">
           <div class="left">
             <ul style="list-style: none;">
-              <li style="color: #FED56B;">price</li>
-              <li style="color: #FED56B;">ur cloud</li>
+              <li style="color: #FED56B;">PRICE</li>
+              <li style="color: #FED56B;">UR CLOUD</li>
               <li>coordinates</li>
               <li>wind_direction</li>
               <li>speed</li>
