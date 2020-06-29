@@ -19,14 +19,16 @@
           <canvas id="canvas"></canvas>
         </div>
         <div class="form">
-          <button class="button" id="capture">
-            <p>to own is to interact</p>
-          </button>
-          <div class="form-button-info">
-            <p style="color: lime;">take a picture<br>while gazing at your cloud</p>
-          </div>
+          <div class="interact">
+            <button class="button" id="capture">
+              <p>to own is to interact</p>
+            </button>
+            <div class="form-button-info">
+              <p style="color: lime;">take a picture<br>while gazing at your cloud</p>
+            </div>
+            </div>
         </div>
-        <!-- <div class="info">
+        <div class="formform">
           <div class="left">
             <ul style="list-style: none;">
               <li style="color: red;">name</li>
@@ -43,7 +45,7 @@
           We’ll use this information to create your certificate<br>
           and send you the UR-tracking number of your cloud.
           </p>
-        </div> -->
+        </div>
         <div class="buttons">
           <button class="button" id="freeze">
             <?php the_field('paypal_button'); ?>
