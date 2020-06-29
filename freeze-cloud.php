@@ -52,6 +52,24 @@
           </button>
         </div>
       </main>
+
+      <div class="container" id="panel">
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-6 offset-md-3" style="background: white; padding: 20px; box-shadow: 10px 10px 5px #888888;">
+                <h1>Take Screenshots in JS</h1>
+                <p style="font-style: italic;">A html2canvas easy implementation</p>
+                <hr>
+                <input type="text" name="caption-input" id="caption-input" placeholder="Caption..." value="" class="form-control" style="border-radius: 0px;">
+                <br>
+                <a href="javascript:getScreen();" class="btn btn-lg btn-block btn-outline-success">Capture Screenshot and Download</a>
+                <a href="" id="blank"></a>
+            </div>
+        </div>
+    </div>
+    <div class="caption" id="caption">
+        <span id="caption-text" class="border" style="text-align: center;">youtube.com/myPHPnotes</span>
+    </div>
     </section>
 
     <!-- Snapshot -->
@@ -85,6 +103,22 @@
         var dataURL = canvas.toDataURL();
       </script>
     </div>
+
+    <script>
+        function getScreen() {
+            var caption = $('#caption-input').val();
+            $("#caption-text").html(caption);
+            $("#panel").hide();
+            html2canvas(document.body, {
+                dpi: 192,
+                onrendered: function(canvas) {
+                    $("#blank").attr('href', canvas.toDataURL("image/png"));
+                    $("#blank").attr('download', caption + '.png');
+                    $("#blank")[0].click();
+                }
+            });
+        }
+    </script>
     
     
 <?php
