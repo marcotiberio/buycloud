@@ -30,8 +30,6 @@
             <ul style="list-style: none;">
               <li style="color: red;">name</li>
               <li style="color: red;">email</li>
-              <li style="color: white; font-size: 9px; margin-top: 10px;">We’ll use this information to create your certificate </li>
-              <li style="color: white; font-size: 9px; margin-top: 10px;">and send you the UR-tracking number of your cloud.</li>
             </ul>
           </div>
           <div class="right" style="text-align: right;">
@@ -40,6 +38,10 @@
               <li style="color: lime;"><?php the_field('ur_cloud'); ?></li>
             </ul>
           </div>
+          <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
+          We’ll use this information to create your certificate<br>
+          and send you the UR-tracking number of your cloud.
+          </p>
         </div>
         <div class="buttons">
           <button class="button" id="freeze">
