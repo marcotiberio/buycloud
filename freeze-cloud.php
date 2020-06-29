@@ -103,16 +103,6 @@
         });
       </script>
     </div>
-
-    <!-- HTML2CANVAS -->
-    <script src="/js/html2canvas.js"></script>
-    <script>
-        function doCapture() {
-          html2canvas(document.getElementById("cover")).then(function (canvas) {
-            condole.log(canvas.toDataURL("image/jpeg", 0.9));
-          });
-        }
-    </script>
     
     
 <?php
