@@ -37,9 +37,9 @@
             </div>
             <div class="right" style="text-align: right;">
               <ul style="list-style: none;">
-                <li style="color: lime;"><input type="text" id="name" name="name" value="name"></li>
-                <li style="color: lime;"><input type="text" id="email" name="email" value="email"></li>
-                <li style="color: lime;"><input type="text" id="confirmemail" name="confirmemail" value="confirmemail"></li>
+                <li><input type="text" id="name" name="name" value="name"></li>
+                <li><input type="text" id="email" name="email" value="email"></li>
+                <li><input type="text" id="confirmemail" name="confirmemail" value="confirmemail"></li>
               </ul>
             </div>
             <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
