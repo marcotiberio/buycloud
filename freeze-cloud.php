@@ -45,7 +45,7 @@
         </div>
         <div class="buttons">
           <button class="button" id="freeze">
-            <a href="#"><p>go to payment</p></a>
+            <?php the_field('paypal_button'); ?>
           </button>
         </div>
       </main>
