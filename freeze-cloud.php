@@ -27,6 +27,8 @@
               <p style="color: lime;">take a picture<br>while gazing at your cloud</p>
             </div>
           </div>
+        </div>
+        <div class="form">
           <div class="formform">
             <div class="left">
               <ul style="list-style: none;">
