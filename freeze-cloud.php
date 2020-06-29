@@ -80,6 +80,9 @@
         navigator.mediaDevices.getUserMedia(constraints).then(stream => {
           player.srcObject = stream;
         });
+
+        // save canvas image as data url (png format by default)
+        var dataURL = canvas.toDataURL();
       </script>
     </div>
     
