@@ -24,8 +24,11 @@
               <p>to own is to interact</p>
             </button>
           </div>
+          <div>
+            <?php the_field('form'); ?>
+          </div>
         </div>
-        <div class="info">
+        <!-- <div class="info">
           <div class="left">
             <ul style="list-style: none;">
               <li style="color: red;">name</li>
@@ -42,7 +45,7 @@
           We’ll use this information to create your certificate<br>
           and send you the UR-tracking number of your cloud.
           </p>
-        </div>
+        </div> -->
         <div class="buttons">
           <button class="button" id="freeze">
             <?php the_field('paypal_button'); ?>
