@@ -22,7 +22,7 @@
           <button class="button" id="capture">
             <p>to own is to interact</p>
           </button>
-          <div>
+          <div class="form-button-info">
             <p style="color: lime;">take a picture<br>while gazing at your cloud</p>
           </div>
         </div>
