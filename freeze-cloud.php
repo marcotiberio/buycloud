@@ -45,6 +45,7 @@
             and send you the UR-tracking number of your cloud.
             </p>
           </div>
+        </div>
         <div class="buttons">
           <button class="button" id="freeze">
             <?php the_field('paypal_button'); ?>
