@@ -30,8 +30,8 @@
             <ul style="list-style: none;">
               <li style="color: red;">name</li>
               <li style="color: red;">email</li>
-              <li style="color: white;">We’ll use this information to create your certificate </li>
-              <li style="color: white;">and send you the UR-tracking number of your cloud.</li>
+              <li style="color: white; font-size: 9px; margin-top: 10px;">We’ll use this information to create your certificate </li>
+              <li style="color: white; font-size: 9px; margin-top: 10px;">and send you the UR-tracking number of your cloud.</li>
             </ul>
           </div>
           <div class="right" style="text-align: right;">
