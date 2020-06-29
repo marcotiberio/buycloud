@@ -118,10 +118,7 @@
         });
       </script>
     </div>
-
-    <!-- HTML2CANVAS -->
-    <script src="/js/html2canvas.js"></script>
-
+    
     <script>
         function getScreen() {
             var caption = $('#caption-input').val();
