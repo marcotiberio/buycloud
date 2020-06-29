@@ -32,12 +32,14 @@
               <ul style="list-style: none;">
                 <li style="color: red;">name</li>
                 <li style="color: red;">email</li>
+                <li style="color: red;">confirm email</li>
               </ul>
             </div>
             <div class="right" style="text-align: right;">
               <ul style="list-style: none;">
-                <li style="color: lime;"><?php the_field('price'); ?></li>
-                <li style="color: lime;"><?php the_field('ur_cloud'); ?></li>
+                <li style="color: lime;"><?php the_field('name'); ?></li>
+                <li style="color: lime;"><?php the_field('email'); ?></li>
+                <li style="color: lime;"><?php the_field('confirm_email'); ?></li>
               </ul>
             </div>
             <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
