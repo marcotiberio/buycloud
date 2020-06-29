@@ -19,11 +19,9 @@
           <canvas id="canvas"></canvas>
         </div>
         <div class="form">
-          <div class="buttons">
-            <button class="button" id="capture">
-              <p>to own is to interact</p>
-            </button>
-          </div>
+          <button class="button" id="capture">
+            <p>to own is to interact</p>
+          </button>
           <div>
             <?php the_field('form'); ?>
           </div>
