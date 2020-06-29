@@ -61,7 +61,7 @@
                 <li><input type="file" id="contract" name="contract" accept="image/*" style="padding: 0; margin-right: 10px; width:140px"></li>
               </ul>
             </div>
-            <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;" onlick="doCapture();">
+            <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
             We’ll use this information to create your certificate<br>
             and send you the UR-tracking number of your cloud.
             </p>
@@ -71,6 +71,7 @@
           <button class="button" id="freeze">
             <?php the_field('paypal_button'); ?>
           </button>
+          <button onclick="doCapture();">screenshot</button>
         </div>
       </main>
 
