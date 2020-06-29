@@ -26,7 +26,7 @@
               <li>cloudiness</li>
               <li>estimated_energy</li>
               <li>temperature</li>
-              <li style="color: white;">Source: NOAA.com, KNMI.nl</li>
+              <li style="color: white; font-size: 9px;">Source: NOAA.com, KNMI.nl</li>
             </ul>
           </div>
           <div class="right" style="text-align: right;">
@@ -44,13 +44,22 @@
         </div>
 
         <div class="buttons">
-          <button class="button" id="manifesto"><p>read manifesto</p></button>
+          <button class="button" id="openManifesto"><p>read manifesto</p></button>
           <button class="button" id="freeze">
             <a href="#"><p>freeze cloud</p></a>
           </button>
         </div>
       </main>
     </section>
+
+
+    <!-- Modal Manifesto -->
+    <div id="modalManifesto" class="modal">
+        <div class="modal-content">
+            <span id="closeManifesto">&times;</span>
+            <p><?php the_field('manifesto'); ?></p>
+        </div>
+    </div>
     
     
 <?php
