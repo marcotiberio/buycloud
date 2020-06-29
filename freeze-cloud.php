@@ -61,7 +61,7 @@
                 <li><input type="file" id="contract" name="contract" accept="image/*" style="padding: 0; margin-right: 10px; width:140px"></li>
               </ul>
             </div>
-            <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
+            <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;" onlick="doCapture();">
             We’ll use this information to create your certificate<br>
             and send you the UR-tracking number of your cloud.
             </p>
@@ -73,22 +73,6 @@
           </button>
         </div>
       </main>
-
-      <div class="container" id="panel">
-        <br><br><br>
-        <div class="row">
-            <div class="col-md-6 offset-md-3" style="background: white; padding: 20px; box-shadow: 10px 10px 5px #888888;">
-                <h1>Take Screenshots in JS</h1>
-                <p style="font-style: italic;">A html2canvas easy implementation</p>
-                <hr>
-                <input type="text" name="caption-input" id="caption-input" placeholder="Caption..." value="" class="form-control" style="border-radius: 0px;">
-                <br>
-                <a href="javascript:getScreen();" class="btn btn-lg btn-block btn-outline-success">Capture Screenshot and Download</a>
-                <a href="" id="blank"></a>
-            </div>
-        </div>
-    </div>
-    </section>
 
     <!-- Snapshot -->
 
