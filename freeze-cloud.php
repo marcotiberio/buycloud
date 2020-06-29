@@ -10,7 +10,7 @@
     </div>
     <section class="main-content">
       <main>
-        <div class="cover">
+        <div class="cover" id="cover">
           <?php 
               $image = get_field('cover');
               if( !empty( $image ) ): ?>
@@ -118,20 +118,14 @@
         });
       </script>
     </div>
-    
+
+    <!-- HTML2CANVAS -->
+    <script src="/js/html2canvas.js"></script>
     <script>
-        function getScreen() {
-            var caption = $('#caption-input').val();
-            $("#caption-text").html(caption);
-            $("#panel").hide();
-            html2canvas(document.body, {
-                dpi: 192,
-                onrendered: function(canvas) {
-                    $("#blank").attr('href', canvas.toDataURL("image/png"));
-                    $("#blank").attr('download', caption + '.png');
-                    $("#blank")[0].click();
-                }
-            });
+        function doCapture() {
+          html2canvas(document.getElementById("cover")).then(function (canvas) {
+            condole.log(canvas.toDataURL("image/jpeg", 0.9));
+          });
         }
     </script>
     
