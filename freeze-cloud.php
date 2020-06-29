@@ -18,6 +18,19 @@
           <?php endif; ?>
           <canvas id="canvas"></canvas>
         </div>
+        
+        <div class="cloud-info">
+          <li><?php the_field('price'); ?></li>
+          <li><?php the_field('ur_cloud'); ?></li>
+          <li><?php the_field('coordinates'); ?></li>
+          <li><?php the_field('wind_direction'); ?></li>
+          <li><?php the_field('speed'); ?></li>
+          <li><?php the_field('cloudiness'); ?></li>
+          <li><?php the_field('estimated_energy'); ?></li>
+          <li><?php the_field('temperature'); ?></li>
+        </div>
+
+
         <div class="form">
           <div class="interact">
             <button class="button" id="capture">
