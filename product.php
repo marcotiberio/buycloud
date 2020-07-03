@@ -6,7 +6,9 @@
 
 
 <div class="post-header">
-      <p>follow the steps to buy this cloud</p>
+      <p>thanks for considering to buy this cloud.
+      a stable and poetic investment by changing a natural phenomenon into an (exploitable) resource.
+      check the data and the weather forecast to speculate the best time to buy it. if you are convinced, make a timestamp by freezing the cloud.</p>
     </div>
     <section class="main-content">
       <main>
