@@ -37,9 +37,9 @@
 
         <div class="form">
           <div class="interact">
-            <button class="button" id="capture">
+            <!-- <button class="button" id="capture">
               <p>to own is to interact</p>
-            </button>
+            </button> -->
             <div class="form-button-info">
               <p style="color: lime;">take a picture<br>while gazing at your cloud</p>
             </div>
@@ -58,7 +58,7 @@
                 <li><input type="text" id="name" name="name" value="name" style="padding: 0; margin-right: 10px;"></li>
                 <li><input type="text" id="email" name="email" value="email" style="padding: 0; margin-right: 10px;"></li>
                 <li><input type="text" id="confirmemail" name="confirmemail" value="confirmemail" style="padding: 0; margin-right: 10px;"></li>
-                <li><input type="file" id="contract" name="contract" accept="image/*" style="padding: 0; margin-right: 10px; width:140px"></li>
+                <li><input type="file" id="certificate" name="certificate" accept="image/*" capture="user" style="padding: 0; margin-right: 10px; width:140px"></li>
               </ul>
             </div>
             <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
@@ -75,34 +75,7 @@
         </div>
       </main>
 
-    <!-- Snapshot -->
-
-    <div class="snapshot">
-      <video id="player" controls autoplay style="display: none;"></video>
-
-      <script>
-        const player = document.getElementById("player");
-        const canvas = document.getElementById("canvas");
-        const context = canvas.getContext("2d");
-        const captureButton = document.getElementById("capture");
-
-        const constraints = {
-          video: true
-        };
-
-        captureButton.addEventListener("click", () => {
-          context.drawImage(player, 0, 0, canvas.width, canvas.height);
-
-          // Stop all video streams.
-          player.srcObject.getVideoTracks().forEach(track => track.stop());
-        });
-
-        // Attach the video stream to the video element and autoplay.
-        navigator.mediaDevices.getUserMedia(constraints).then(stream => {
-          player.srcObject = stream;
-        });
-      </script>
-    </div>
+    
     
     
 <?php
