@@ -90,12 +90,7 @@
             </p>
         </div>
 
-        <div class="buttons">
-          <button class="button" id="freeze">
-            <?php the_field('paypal_button'); ?>
-          </button>
-          <button onclick="doCapture();">screenshot</button>
-        </div>
+        
       </main>
 
     
