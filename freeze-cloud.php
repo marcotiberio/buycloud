@@ -49,11 +49,11 @@
             <span><input type="file" id="certificate" name="certificate" accept="image/*" capture="user"></span>
             <span><label for="certificate">take a picture while gazing at your cloud</label></span><br>
             <span><label for="name">name:</label></span>
-            <span><input type="text" id="name" name="name" value="John"></span><br>
+            <span><input type="text" id="name" name="name" value="John" style="text-align: right; padding: 0; margin-right: 10px;"></span><br>
             <span><label for="email">email:</label></span>
-            <span><input type="text" id="email" name="email" value="Doe"></span><br>
+            <span><input type="text" id="email" name="email" value="Doe" style="text-align: right; padding: 0; margin-right: 10px;"></span><br>
             <span><label for="confirm">confirm email:</label></span>
-            <span><input type="text" id="confirm" name="confirm" value="Doe"></span><br>
+            <span><input type="text" id="confirm" name="confirm" value="Doe" style="text-align: right; padding: 0; margin-right: 10px;"></span><br>
             <input type="submit" value="Submit">
           </form> 
             <!-- <div class="left">
