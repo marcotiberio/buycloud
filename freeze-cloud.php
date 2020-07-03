@@ -47,10 +47,16 @@
           <div class="formform">
             <div class="left">
               <ul style="list-style: none;">
+                <li>
+                  <label for="contract">
+                    <button class="button" id="capture">
+                      <p>to own is to interact</p>
+                    </button>
+                  </label>
+                </li>
                 <li style="color: red;"><label for="name">name</label></li>
                 <li style="color: red;"><label for="email">email</label></li>
                 <li style="color: red;"><label for="confirmemail">confirm email</label></li>
-                <li style="color: red;"><label for="contract">contract photo</label></li>
               </ul>
             </div>
             <div class="right" style="text-align: right;">
