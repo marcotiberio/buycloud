@@ -44,7 +44,6 @@
               <p style="color: lime;">take a picture<br>while gazing at your cloud</p>
             </div>
           </div> -->
-          <div class="formform">
           <form action="/action_page.php">
             <span><input type="file" id="certificate" name="certificate" accept="image/*" capture="user"></span>
             <span><label for="certificate">take a picture while gazing at your cloud</label></span><br>
@@ -82,7 +81,6 @@
             We’ll use this information to create your certificate<br>
             and send you the UR-tracking number of your cloud.
             </p>
-          </div>
         </div>
 
         <div class="buttons">
