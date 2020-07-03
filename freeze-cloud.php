@@ -45,7 +45,16 @@
             </div>
           </div>
           <div class="formform">
-            <div class="left">
+          <form action="/action_page.php">
+            <span><input type="file" id="certificate" name="certificate" accept="image/*" capture="user"></span>
+            <span><label for="fname">take a picture while gazing at your cloud</label></span><br>
+            <span><label for="fname">First name:</label></span>
+            <span><input type="text" id="fname" name="fname" value="John"></span><br>
+            <span><label for="lname">Last name:</label></span>
+            <span><input type="text" id="lname" name="lname" value="Doe"></span><br>
+            <input type="submit" value="Submit">
+          </form> 
+            <!-- <div class="left">
               <ul style="list-style: none;">
                 <li>
                   <label for="contract">
@@ -66,7 +75,7 @@
                 <li><input type="text" id="email" name="email" value="email" style="padding: 0; margin-right: 10px;"></li>
                 <li><input type="text" id="confirmemail" name="confirmemail" value="confirmemail" style="padding: 0; margin-right: 10px;"></li>
               </ul>
-            </div>
+            </div> -->
             <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
             We’ll use this information to create your certificate<br>
             and send you the UR-tracking number of your cloud.
