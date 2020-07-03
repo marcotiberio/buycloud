@@ -58,7 +58,7 @@
                 <li><input type="text" id="name" name="name" value="name" style="padding: 0; margin-right: 10px;"></li>
                 <li><input type="text" id="email" name="email" value="email" style="padding: 0; margin-right: 10px;"></li>
                 <li><input type="text" id="confirmemail" name="confirmemail" value="confirmemail" style="padding: 0; margin-right: 10px;"></li>
-                <li><input type="file" id="certificate" name="certificate" accept="image/*" capture="user" style="padding: 0; margin-right: 10px; width:140px"></li>
+                <li><input type="file" id="certificate" name="certificate" accept="image/*" capture="user" style="padding: 0; margin-right: 10px;"></li>
               </ul>
             </div>
             <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
