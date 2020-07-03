@@ -36,14 +36,14 @@
 
 
         <div class="form">
-          <div class="interact">
-            <!-- <button class="button" id="capture">
+          <!-- <div class="interact">
+            <button class="button" id="capture">
               <p>to own is to interact</p>
-            </button> -->
+            </button>
             <div class="form-button-info">
               <p style="color: lime;">take a picture<br>while gazing at your cloud</p>
             </div>
-          </div>
+          </div> -->
           <div class="formform">
           <form action="/action_page.php">
             <span><input type="file" id="certificate" name="certificate" accept="image/*" capture="user"></span>
@@ -82,6 +82,7 @@
             </p>
           </div>
         </div>
+
         <div class="buttons">
           <button class="button" id="freeze">
             <?php the_field('paypal_button'); ?>
