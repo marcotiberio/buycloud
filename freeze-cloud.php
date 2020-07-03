@@ -61,9 +61,7 @@
             </div>
             <div class="right" style="text-align: right;">
               <ul style="list-style: none;">
-                <li><input type="file" id="certificate" name="certificate" accept="image/*" capture="user" style="padding: 0; margin-right: 10px;"><button class="button" id="capture">
-                      <p>to own is to interact</p>
-                    </button></li>
+                <li><input type="file" id="certificate" name="certificate" accept="image/*" capture="user" style="padding: 0; margin-right: 10px;"></li>
                 <li><input type="text" id="name" name="name" value="name" style="padding: 0; margin-right: 10px;"></li>
                 <li><input type="text" id="email" name="email" value="email" style="padding: 0; margin-right: 10px;"></li>
                 <li><input type="text" id="confirmemail" name="confirmemail" value="confirmemail" style="padding: 0; margin-right: 10px;"></li>
