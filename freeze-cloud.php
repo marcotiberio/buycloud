@@ -37,14 +37,6 @@
 
 
         <div class="form">
-          <!-- <div class="interact">
-            <button class="button" id="capture">
-              <p>to own is to interact</p>
-            </button>
-            <div class="form-button-info">
-              <p style="color: lime;">take a picture<br>while gazing at your cloud</p>
-            </div>
-          </div> -->
           <form action="/action_page.php">
             <span><input type="file" id="certificate" name="certificate" accept="image/*" capture="user"></span>
             <span><label for="certificate">take a picture while gazing at your cloud</label></span>
@@ -62,33 +54,13 @@
             </div>
             <input type="submit" value="Submit">
           </form> 
-            <!-- <div class="left">
-              <ul style="list-style: none;">
-                <li>
-                  <label for="contract">
-                    <button class="button" id="capture">
-                      <p>to own is to interact</p>
-                    </button>
-                  </label>
-                </li>
-                <li style="color: red;"><label for="name">name</label></li>
-                <li style="color: red;"><label for="email">email</label></li>
-                <li style="color: red;"><label for="confirmemail">confirm email</label></li>
-              </ul>
-            </div>
-            <div class="right" style="text-align: right;">
-              <ul style="list-style: none;">
-                <li><input type="file" id="certificate" name="certificate" accept="image/*" capture="user" style="padding: 0; margin-right: 10px;"></li>
-                <li><input type="text" id="name" name="name" value="name" style="padding: 0; margin-right: 10px;"></li>
-                <li><input type="text" id="email" name="email" value="email" style="padding: 0; margin-right: 10px;"></li>
-                <li><input type="text" id="confirmemail" name="confirmemail" value="confirmemail" style="padding: 0; margin-right: 10px;"></li>
-              </ul>
-            </div> -->
             <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
             We’ll use this information to create your certificate<br>
             and send you the UR-tracking number of your cloud.
             </p>
         </div>
+
+       <button></button>
 
         
       </main>
