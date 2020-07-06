@@ -60,7 +60,9 @@
             </p>
         </div>
 
-       <button></button>
+       <button>
+        <?php the_field('price'); ?>
+      </button>
 
         
       </main>
