@@ -60,7 +60,7 @@
             </p>
         </div>
 
-        <button class="button" id="freeze">
+        <button class="button" id="capture">
           <?php the_field('paypal_button'); ?>
         </button>
 
