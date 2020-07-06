@@ -60,9 +60,9 @@
             </p>
         </div>
 
-       <button>
-        <?php the_field('price'); ?>
-      </button>
+        <button class="button" id="freeze">
+          <?php the_field('price'); ?>
+        </button>
 
         
       </main>
