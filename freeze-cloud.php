@@ -60,6 +60,10 @@
             </p>
         </div>
 
+        <div class="test-form">
+          <?php the_field('test_form'); ?>
+        </div>
+
         <button class="button" id="payment">
           <?php the_field('paypal_button'); ?>
         </button>
