@@ -61,7 +61,7 @@
         </div>
 
         <button class="button" id="freeze">
-          <?php the_field('price'); ?>
+          <?php the_field('paypal_button'); ?>
         </button>
 
         
