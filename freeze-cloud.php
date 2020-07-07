@@ -47,9 +47,9 @@
                 <p><label for="confirm">confirm email:</label></p>
               </div>
               <div>
-                <input type="text" id="name" name="name" value="John" style="text-align: right; padding: 0; margin-right: 10px;">
-                <input type="text" id="email" name="email" value="Doe" style="text-align: right; padding: 0; margin-right: 10px;">
-                <input type="text" id="confirm" name="confirm" value="Doe" style="text-align: right; padding: 0; margin-right: 10px;">
+                <input type="text" id="name" name="name" value="" style="text-align: right; padding: 0; margin-right: 10px; background-color: black; border-bottom: 1px solid lime; color: lime;">
+                <input type="text" id="email" name="email" value="" style="text-align: right; padding: 0; margin-right: 10px; background-color: black; border-bottom: 1px solid lime; color: lime;">
+                <input type="text" id="confirm" name="confirm" value="" style="text-align: right; padding: 0; margin-right: 10px; background-color: black; border-bottom: 1px solid lime; color: lime;">
               </div>
             </div>
             <input type="submit" value="Submit">
