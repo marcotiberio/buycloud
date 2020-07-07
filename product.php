@@ -6,14 +6,8 @@
 
 
 <div class="post-header">
-      <p style="font-weight: 800;">thankyou for your consideration</p>
-      <p>a cloud is stable and poetic investment and transforms the natural phenomenon into an (exploitable) resource.
-        <br><br>
-        check its data and the weather forecast to speculate the best time to buy it. 
-        read the manifesto to learn about the cloud-capitalisation-process. 
-        When you are convinced, make a timestamp by freezing the cloud.
-      </p>
-    </div>
+      
+</div>
     <section class="main-content">
       <main>
         <?php 
