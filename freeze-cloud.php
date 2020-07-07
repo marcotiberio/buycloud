@@ -43,12 +43,12 @@ get_header(); ?>
             <span><label for="certificate">take a picture while gazing at your cloud</label></span>
             <div class="test">
               <div>
-                <p><label for="name">name:</label></p>
+                <p><label for="fname">name:</label></p>
                 <p><label for="email">email:</label></p>
                 <p><label for="confirm">confirm email:</label></p>
               </div>
               <div>
-                <input type="text" id="name" name="name" value="" style="text-align: right; padding: 0; margin-right: 10px; background-color: black; border-bottom: 1px solid lime; border-top: none; border-left: none; border-right: none; color: lime;">
+                <input type="text" id="fname" name="fname" value="" style="text-align: right; padding: 0; margin-right: 10px; background-color: black; border-bottom: 1px solid lime; border-top: none; border-left: none; border-right: none; color: lime;">
                 <input type="text" id="email" name="email" value="" style="text-align: right; padding: 0; margin-right: 10px; background-color: black; border-bottom: 1px solid lime; border-top: none; border-left: none; border-right: none; color: lime;">
                 <input type="text" id="confirm" name="confirm" value="" style="text-align: right; padding: 0; margin-right: 10px; background-color: black; border-bottom: 1px solid lime; border-top: none; border-left: none; border-right: none; color: lime;">
               </div>
