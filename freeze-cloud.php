@@ -65,11 +65,12 @@ get_header(); ?>
           <?php the_field('test_form'); ?>
         </div>
 
-      </main>
-
-      <button class="button" id="payment">
+        <button class="button" id="payment">
           <?php the_field('paypal_button'); ?>
         </button>
+
+        
+      </main>
 
     
     
