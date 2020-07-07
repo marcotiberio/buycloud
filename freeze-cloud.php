@@ -6,16 +6,8 @@ acf_form_head();
 get_header(); ?>
 
 
-<div class="post-header">
-    <p style="font-weight: 800; margin-bottom: 0;">to own is to interact</p>
-    <div id="postHeaderIntro">
-      <p style="padding-left: 30px; padding-top: 20px;">Merge your data with the cloud and take a picture of you gazing at eachother. 
-      This information is used to generate your certificate. 
-      <br><br>
-      Once you pay, your ownership will be registred in the US (universal System) 
-      where you can keep track of the movements and value of your cloud.
-      </p>
-    </div>
+<div class="post-header-freeze">
+  <img src="https://www.buycloud.space/wp-content/uploads/2020/07/postheader2.png" alt="">
 </div>
     <section class="main-content">
       <main>
