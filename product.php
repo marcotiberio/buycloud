@@ -35,12 +35,12 @@
             <ul style="list-style: none;">
               <li style="color: #FED56B;"><?php the_field('price'); ?></li>
               <li style="color: #FED56B;"><?php the_field('ur_cloud'); ?></li>
-              <li style="color: lime;"><?php the_field('coordinates'); ?></li>
-              <li style="color: lime;"><?php the_field('wind_direction'); ?></li>
-              <li style="color: lime;"><?php the_field('speed'); ?></li>
-              <li style="color: lime;"><?php the_field('cloudiness'); ?></li>
-              <li style="color: lime;"><?php the_field('estimated_energy'); ?></li>
-              <li style="color: lime;"><?php the_field('temperature'); ?></li>
+              <li style="color: #3AC949;"><?php the_field('coordinates'); ?></li>
+              <li style="color: #3AC949;"><?php the_field('wind_direction'); ?></li>
+              <li style="color: #3AC949;"><?php the_field('speed'); ?></li>
+              <li style="color: #3AC949;"><?php the_field('cloudiness'); ?></li>
+              <li style="color: #3AC949;"><?php the_field('estimated_energy'); ?></li>
+              <li style="color: #3AC949;"><?php the_field('temperature'); ?></li>
             </ul>
           </div>
         </div>
