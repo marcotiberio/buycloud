@@ -62,6 +62,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Document
 	 ========================================================================== */
 
+	 @font-face {
+		font-family: 'PF-Ronda-Seven';
+			src:  url('js/assets/fonts/PF-Ronda-Seven.ttf.woff') format('woff'),
+			url('js/assets/fonts/PF-Ronda-Seven.ttf.svg#PF-Ronda-Seven') format('svg'),
+			url('js/assets/fonts/PF-Ronda-Seven.ttf.eot'),
+			url('js/assets/fonts/PF-Ronda-Seven.ttf.eot?#iefix') format('embedded-opentype'); 
+			font-weight: normal;
+			font-style: normal;
+		}
+
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
