@@ -7,7 +7,7 @@ get_header(); ?>
 
 
 <div class="post-header">
-    <p style="font-weight: 800; -webkit-text-stroke-width: 0.3px; letter-spacing: 1px;">to own is to interact</p>
+    <p style="font-weight: 800;">to own is to interact</p>
     <p>Merge your data with the cloud and take a picture of you gazing at eachother. 
       This information is used to generate your certificate. 
       <br><br>
