@@ -7,8 +7,13 @@ get_header(); ?>
 
 
 <div class="post-header">
-      <p>to own is to interact. merge your data with the cloud and take a picture of you gazing at eachother. this information is used to generate your certificate.
-      once you pay, your ownership will be registred in the US (universal System) where you can keep track of the movements and value of your cloud.</p>
+    <p style="font-weight: 800;">to own is to interact</p>
+    <p>Merge your data with the cloud and take a picture of you gazing at eachother. 
+      This information is used to generate your certificate. 
+      <br><br>
+      Once you pay, your ownership will be registred in the US (universal System) 
+      where you can keep track of the movements and value of your cloud.
+      </p>
     </div>
     <section class="main-content">
       <main>
