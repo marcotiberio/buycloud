@@ -11,7 +11,8 @@
         <br><br>
         check its data and the weather forecast to speculate the best time to buy it. 
         read the manifesto to learn about the cloud-capitalisation-process. 
-        When you are convinced, make a timestamp by freezing the cloud.</p>
+        When you are convinced, make a timestamp by freezing the cloud.
+      </p>
     </div>
     <section class="main-content">
       <main>
