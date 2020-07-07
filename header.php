@@ -17,8 +17,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<!-- HTML2CANVAS -->
-    <script src="/js/html2canvas.js"></script>
+	<style>
+		@font-face {
+		font-family: 'PF-Ronda-Seven';
+			src:  url('js/assets/fonts/PF-Ronda-Seven.ttf.woff') format('woff'),
+			url('js/assets/fonts/PF-Ronda-Seven.ttf.svg#PF-Ronda-Seven') format('svg'),
+			url('js/assets/fonts/PF-Ronda-Seven.ttf.eot'),
+			url('js/assets/fonts/PF-Ronda-Seven.ttf.eot?#iefix') format('embedded-opentype'); 
+			font-weight: normal;
+			font-style: normal;
+		}
+	</style>
 
 	<?php wp_head(); ?>
 </head>
