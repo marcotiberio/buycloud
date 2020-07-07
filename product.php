@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 
 
-<div class="post-header">
+<div class="post-header-product">
       
 </div>
     <section class="main-content">
