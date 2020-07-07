@@ -42,9 +42,9 @@
             <span><label for="certificate">take a picture while gazing at your cloud</label></span>
             <div class="test">
               <div>
-                <label for="name">name:</label>
-                <label for="email">email:</label>
-                <label for="confirm">confirm email:</label>
+                <p><label for="name">name:</label></p>
+                <p><label for="email">email:</label></p>
+                <p><label for="confirm">confirm email:</label></p>
               </div>
               <div>
                 <input type="text" id="name" name="name" value="John" style="text-align: right; padding: 0; margin-right: 10px;">
