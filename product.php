@@ -6,9 +6,12 @@
 
 
 <div class="post-header">
-      <p>thanks for considering to buy this cloud.
-      a stable and poetic investment by changing a natural phenomenon into an (exploitable) resource.
-      check the data and the weather forecast to speculate the best time to buy it. if you are convinced, make a timestamp by freezing the cloud.</p>
+      <p style="font-weight: 800;">thankyou for your consideration</p>
+      <p>a cloud is stable and poetic investment and transforms the natural phenomenon into an (exploitable) resource.
+        <br><br>
+        check its data and the weather forecast to speculate the best time to buy it. 
+        read the manifesto to learn about the cloud-capitalisation-process. 
+        When you are convinced, make a timestamp by freezing the cloud.</p>
     </div>
     <section class="main-content">
       <main>
