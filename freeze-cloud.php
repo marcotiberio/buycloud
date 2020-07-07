@@ -37,7 +37,7 @@ get_header(); ?>
         </div>
 
 
-        <div class="form">
+        <div class="form" style="display: none">
           <form action="/action_page.php">
             <span><input type="file" id="certificate" name="certificate" accept="image/*" capture="user"></span>
             <span><label for="certificate">take a picture while gazing at your cloud</label></span>
