@@ -8,13 +8,15 @@ get_header(); ?>
 
 <div class="post-header">
     <p style="font-weight: 800;">to own is to interact</p>
-    <p id="postHeaderIntro" style="margin-left: 10px;">Merge your data with the cloud and take a picture of you gazing at eachother. 
+    <div id="postHeaderIntro">
+      <p style="margin-left: 10px;">Merge your data with the cloud and take a picture of you gazing at eachother. 
       This information is used to generate your certificate. 
       <br><br>
       Once you pay, your ownership will be registred in the US (universal System) 
       where you can keep track of the movements and value of your cloud.
       </p>
     </div>
+</div>
     <section class="main-content">
       <main>
         <div class="cover" id="cover">
