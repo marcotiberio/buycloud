@@ -37,33 +37,17 @@ get_header(); ?>
         </div>
 
 
-        <div class="form" style="display: none">
-          <form action="/action_page.php">
-            <span><input type="file" id="certificate" name="certificate" accept="image/*" capture="user"></span>
-            <span><label for="certificate">take a picture while gazing at your cloud</label></span>
-            <div class="test">
-              <div>
-                <p><label for="fname">name:</label></p>
-                <p><label for="email">email:</label></p>
-                <p><label for="confirm">confirm email:</label></p>
-              </div>
-              <div>
-                <input type="text" id="fname" name="fname" value="" style="text-align: right; padding: 0; margin-right: 10px; background-color: black; border-bottom: 1px solid lime; border-top: none; border-left: none; border-right: none; color: lime;">
-                <input type="text" id="email" name="email" value="" style="text-align: right; padding: 0; margin-right: 10px; background-color: black; border-bottom: 1px solid lime; border-top: none; border-left: none; border-right: none; color: lime;">
-                <input type="text" id="confirm" name="confirm" value="" style="text-align: right; padding: 0; margin-right: 10px; background-color: black; border-bottom: 1px solid lime; border-top: none; border-left: none; border-right: none; color: lime;">
-              </div>
-            </div>
-            <input type="submit" value="Submit">
-          </form> 
+        <div class="form">
+          <div class="test-form">
+            <?php the_field('test_form'); ?>
+          </div>
             <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
             We’ll use this information to create your certificate<br>
             and send you the UR-tracking number of your cloud.
             </p>
         </div>
 
-        <div class="test-form">
-          <?php the_field('test_form'); ?>
-        </div>
+        
 
         <button class="button" id="payment">
           <?php the_field('paypal_button'); ?>
