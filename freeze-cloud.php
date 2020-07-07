@@ -39,10 +39,6 @@ get_header(); ?>
 
         <div class="form">
             <?php the_field('test_form'); ?>
-            <p class="credits" style="color: white; font-size: 9px; margin-top: 10px;">
-            We’ll use this information to create your certificate<br>
-            and send you the UR-tracking number of your cloud.
-            </p>
         </div>
 
         <button class="button" id="payment">
