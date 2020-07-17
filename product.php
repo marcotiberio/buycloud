@@ -6,7 +6,7 @@
 
 
 <div class="post-header-product">
-  <img src="https://www.buycloud.space/wp-content/uploads/2020/07/postheader1.png" alt="">
+  <img src="https://www.buycloud.space/wp-content/uploads/2020/07/Group-40-4.png" alt="">
 </div>
     <section class="main-content">
       <main>
