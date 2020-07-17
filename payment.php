@@ -10,13 +10,19 @@ get_header(); ?>
     <section class="main-content">
       <p>
       Your certifiacte will be send to your email once it is generated. 
-      This can take some time. Your ownership is implemented in the virtual 
+      This can take some time. 
+      <br><br>
+      Your ownership is implemented in the virtual 
       cadaste in the Universal System (US ). It will forever roam with its 
       frozen values. It can gain power by concurring smaller clouds, but the 
       opposite can happen too. Check in on the US to see what’s happening to 
-      your cloud. The overall value of the clouds will rise in connection to 
+      your cloud. 
+      <br><br>
+      The overall value of the clouds will rise in connection to 
       the increasing Co2-emissions as this will manipulate the scarcity and 
-      demand of clouds. Acces and track your cloud regurlarly in the US on your 
+      demand of clouds. 
+      <br><br>
+      Acces and track your cloud regurlarly in the US on your 
       desktop with the link in your e-mail, or go to BUYCLOUD.space on your computer.
       </p>
     </section>
