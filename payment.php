@@ -5,7 +5,7 @@ get_header(); ?>
 
 
 <div class="post-header-product">
-  <img src="https://www.buycloud.space/wp-content/uploads/2020/07/Group-42.png" alt="">
+  <img style="max-width: 60%;" src="https://www.buycloud.space/wp-content/uploads/2020/07/Group-42.png" alt="">
 </div>
     <section class="main-content">
       <p>
