@@ -13,7 +13,7 @@ get_header(); ?>
       This can take some time. 
       <br><br>
       Your ownership is implemented in the virtual 
-      cadaste in the Universal System (US ). It will forever roam with its 
+      cadaste in the Universal System (<span style="font-family: Baskerville; font-style: italic; font-weight: bold; font-size: 1rem; line-height: 1rem; color: #E92828;">US</span>). It will forever roam with its 
       frozen values. It can gain power by concurring smaller clouds, but the 
       opposite can happen too. Check in on the US to see what’s happening to 
       your cloud. 
@@ -23,7 +23,7 @@ get_header(); ?>
       demand of clouds. 
       <br><br>
       Acces and track your cloud regurlarly in the US on your 
-      desktop with the link in your e-mail, or go to BUYCLOUD.space on your computer.
+      desktop with the link in your e-mail, or go to <span style="font-family: Baskerville; font-style: italic; font-weight: bold; font-size: 1rem; line-height: 1rem; color: #E92828;">BUYCLOUD.space</span> on your computer.
       </p>
     </section>
 
