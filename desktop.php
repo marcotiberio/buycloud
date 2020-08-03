@@ -5,28 +5,140 @@ get_header(); ?>
 
 
 <style>
+		/* font */
+		@font-face {
+			font-family: 'PF-Ronda-Seven';
+			src:url('font/PF-Ronda-Seven.ttf.woff') format('woff'),
+				url('font/PF-Ronda-Seven.ttf.svg#PF-Ronda-Seven') format('svg'),
+				url('font/PF-Ronda-Seven.ttf.eot'),
+				url('font/PF-Ronda-Seven.ttf.eot?#iefix') format('embedded-opentype'); 
+			font-weight: normal;
+			font-style: normal;
+		}
+
 		/* basic reset */
 		html, body, canvas {
 			box-sizing: border-box;
 			margin: 0; padding: 0;
 			background-color: black;
+			font-family: 'PF-Ronda-Seven';
 		}
 		/* you'll need to define a width && height to make it work */
 		#p5 { 
 			display: block;
 			margin: 0;
 			position: absolute;
-			top: 50%;
+			/* top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 740px;
-			height: 440px;
+			transform: translate(-50%, -50%); */
+			width: 100vw;
+			height: 100vh;
+		}
+
+		.border-top {
+			display: grid;
+			grid-template-columns: repeat(9, 1fr);
+			grid-template-rows: 1fr;
+			width: 100vw;
+			height: 10px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 4000;
+			/* transform: rotate(90deg); */
+		}
+
+		.border-top div {
+			border-right: 1px solid white;
+		}
+
+		.border-right {
+			display: grid;
+			grid-template-columns: repeat(11, 1fr);
+			grid-template-rows: 1fr;
+			width: 50vw;
+			height: 10px;
+			position: fixed;
+			top: 40vh;
+			right: -49vh;
+			z-index: 4000;
+			transform: rotate(90deg);
+		}
+
+		.border-right div {
+			border-right: 1px solid white;
+		}
+
+
+		header {
+			width: auto;
+			height: 10vh;
+			margin: 2%; padding: 0;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: transparent;
+			z-index: 3000;
 		}
 
 		header img {
 			width: auto;
-			height: 10vh;
-			margin: 2%; padding: 0;
+			width: 170px;
+			height: auto;
+		}
+
+		#openModal:hover {
+			cursor: pointer;
+		}
+		
+		/* The Modal (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0); /* Black w/ opacity */
+		}
+
+		/* Modal Content */
+		.modal-content {
+			background-color: #ffffff;
+			margin: auto;
+			padding: 20px;
+			border: 2px solid #D31D1D;
+			width: 275px;
+			position: absolute;
+			top: 28vh;
+			left: 2%;
+		}
+
+		.modal-content p {
+			font-size: 10px;
+		}
+
+		/* The Close Button */
+		.close {
+			position: absolute;
+			color: #D31D1D;
+			/* float: right; */
+			font-size: 16px;
+			font-weight: bold;
+			top: 5px;
+			right: 10px;
+
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #4467A7;
+			text-decoration: none;
+			cursor: pointer;
 		}
 	</style>
 
