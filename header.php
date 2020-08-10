@@ -17,6 +17,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
 	<style>
 		@font-face {
 		font-family: 'PF-Ronda-Seven';
