@@ -1,6 +1,6 @@
 // Manifesto Modal
 $(document).ready(function(){
-    $("#openManifesto").click(function(){
+    $("#declaration").click(function(){
         $("#modalManifesto").show();
     });
     $("#closeManifesto").click(function(){

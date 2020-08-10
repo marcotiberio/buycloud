@@ -35,14 +35,22 @@ get_header(); ?>
           </div>
         </div>
 
-
-        <p id="ownInteract">
-          To own is to interact<br>Unite your data with the cloud
-        </p>
+		  
+		<p id="ownInteract">
+			To own is to interact<br>Unite your data with the cloud
+		</p>
 
         <div class="form">
             <?php the_field('test_form'); ?>
         </div>
+		  
+		<p id="declaration">
+          read declaration
+        </p>
+		  
+		<p id="makeSure">
+			make sure you submit before paying
+		</p>
 
         <button class="button" id="payment">
           <?php the_field('paypal_button'); ?>
@@ -50,6 +58,14 @@ get_header(); ?>
 
         
       </main>
+		
+		<!-- Modal Manifesto -->
+    <div id="modalManifesto" class="modal">
+        <div class="modal-content">
+            <span id="closeManifesto">&times;</span>
+            <p><?php the_field('manifesto'); ?></p>
+        </div>
+    </div>
 
     
     
