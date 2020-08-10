@@ -7,7 +7,7 @@ get_header(); ?>
 
 
 <div class="post-header-freeze">
-  <img src="https://www.buycloud.space/wp-content/uploads/2020/07/postheader2.png" alt="">
+  <img src="https://www.buycloud.space/wp-content/uploads/2020/08/intro.png" alt="">
 </div>
     <section class="main-content">
       <main>
