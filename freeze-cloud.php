@@ -36,6 +36,10 @@ get_header(); ?>
         </div>
 
 
+        <p id="ownInteract">
+          To own is to interact<br>Unite your data with the cloud
+        </p>
+
         <div class="form">
             <?php the_field('test_form'); ?>
         </div>
