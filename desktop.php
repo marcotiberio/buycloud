@@ -141,9 +141,9 @@ get_header(); ?>
 			cursor: pointer;
 		}
 	</style>
-
+</head>
 <body>
-<div class="border-top">
+	<div class="border-top">
 		<div></div>
 		<div></div>
 		<div></div>
@@ -196,10 +196,10 @@ get_header(); ?>
 	</div>
 	<div id="p5"><!-- This div is the container in which P5.js will place a canvas element --></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
-	<!-- <script src="js/clouds.js"></script> Choose either .js file -->
-	<script src="js/clouds.velocity.js"></script>
+	<script src="js/data.js"></script> <!-- this needs to be loaded first... -->
+	<!-- <script src="js/clouds.data.js"></script>  ... so this file can access those variables -->
 
-  <script>
+	<script>
 		// Get the modal
 		var modal = document.getElementById("modalManifesto");
 		
@@ -228,187 +228,114 @@ get_header(); ?>
 	</script>
 
 	<script>
-    /*
- velocity basedd image selection
-*/
+				/*
+		velocity basedd image selection
+		*/
 
-// directory where images of Clouds are
-var assetDirectory = '../img/';
+		// directory where images of Clouds are
+		var assetDirectory = '../img/';
 
-/* all names of cloud image files
-	sorted slowest →  fastest
-	(fastest at bottom) */
-var assets = [
-	'cert1.png',
-	'cert2.png',
-	'cert3.png',
-	'cert4.png',
-	'cert5.png',
-];
+		var cloudData = data;
 
-var buyClouds = {
-	'targetElementId' : 'p5', // Container element id for p5 canvas (now: 'div#p5')
-	'backgroundColor' : '#4467A7', // Background color
-	'quantity' : 30, // The amount of Clouds to be drawn
-	'radius' : 10, // Radius of Clouds
-	'velocityScale' : 1, // Max. initial velocity (px/frame)
-	'expectedVmax' : 2, 
-	'safeareaFactor' : 1.4, // How far the clouds can drift off-screen, before returning to the oppposite side (recommended values between 1.4 and 2.0)
-	'hitzoneDisplay' : false, // For debugging: dipslay ellipse geometry [true | false]
+		var buyClouds = {
+			'targetElementId' : 'p5', // Container element id for p5 canvas (now: 'div#p5')
+			'backgroundColor' : '#4467A7', // Background color
+			'quantity' : 30, // The amount of Clouds to be drawn
+			'radius' : 10, // Radius of Clouds
+			'velocityScale' : .3, // Max. initial velocity (px/frame)
+			'expectedVmax' : 2, 
+			'safeareaFactor' : 1.4, // How far the clouds can drift off-screen, before returning to the oppposite side (recommended values between 1.4 and 2.0)
+			'hitzoneDisplay' : false, // For debugging: dipslay ellipse geometry [true | false]
 
-	'targetElement' : function(){ return document.getElementById(this.targetElementId) },
-	'targetElementDimensions' : function(){ return [this.targetElement().clientWidth, this.targetElement().clientHeight] },
-	'Clouds' : [], // Cloud objects
-	'newClouds' : [], // temporary array, this is where new Clouds are born
-	'images' : [], // This is where all the image() objects are stored
-};
+			'targetElement' : function(){ return document.getElementById(this.targetElementId) },
+			'targetElementDimensions' : function(){ return [this.targetElement().clientWidth, this.targetElement().clientHeight] },
+			'Clouds' : [], // Cloud objects
 
-function setup() {
-	createCanvas( buyClouds.targetElementDimensions()[0], buyClouds.targetElementDimensions()[1] ).parent(buyClouds.targetElementId);
+			'date' : new Date().getTime()
+		};
 
-	// Ready the images
-	assets.map( asset => {
-		var path = assetDirectory.concat(asset); // Get the paths
-		var image = loadImage(path); // Load the image temporarily
-		buyClouds.images.push( image ); // Push them to the images array
-	});
+		function setup() {
+			createCanvas( buyClouds.targetElementDimensions()[0], buyClouds.targetElementDimensions()[1] ).parent(buyClouds.targetElementId);
 
-	// Initialize the Clouds
-	for( var i = 0; i < buyClouds.quantity; i++ ) {
-		var location = createVector( random(0, width), random(0, height) );
-		var velocity = createVector( random(-buyClouds.velocityScale, buyClouds.velocityScale), random(-buyClouds.velocityScale, buyClouds.velocityScale) );
-		var radius = buyClouds.radius * random(0.97, 1.03);
+			cloudData.map( (cloud, index) => {
 
-		buyClouds.Clouds.push( new Cloud( location, velocity, radius, image) );
-		
-	}
-	
-}
+				var location = createVector( cloud.x0, cloud.y0 );
+				var velocity = createVector( cloud.vx, cloud.vy );
 
-function draw() {
-	background( buyClouds.backgroundColor);
+				var path = assetDirectory.concat( cloud.image ); // Get the paths
+				var image = loadImage(path); // Load the image
 
-	var i = 0;
-	while ( i < buyClouds.Clouds.length ) {
-		var wolkje_1 = buyClouds.Clouds[i];
+				var radius = cloud.radius ? cloud.radius : buyClouds.radius // If undefined, fallback to global default
+				var t0 = cloud.t0; // already set
 
-		var j = i + 1;
-		while ( j < buyClouds.Clouds.length ) {
-			var wolkje_2 = buyClouds.Clouds[j];
-			var deltaVector = createVector(wolkje_1.location.x - wolkje_2.location.x, wolkje_1.location.y - wolkje_2.location.y );	
-			var distance = deltaVector.mag();
+				var newCloud = new Cloud( location, velocity, radius, image, t0 );
 
-			function returnLargest(array) {
-				var values = [ array[0].radius, array[1].radius ];
-				var value = max(values);
-				
-				return array[ values.indexOf(value) ];
-			}
+				buyClouds.Clouds.push( newCloud );
+			})
 
-			if ( distance < (wolkje_1.radius + wolkje_2.radius) && distance !== 0 ){
-				var newLocation = createVector( (wolkje_1.location.x + wolkje_2.location.x)*0.5, (wolkje_1.location.y + wolkje_2.location.y)*0.5 );
-				var newVelocity = createVector( (wolkje_1.velocity.x + wolkje_2.velocity.x)*1, (wolkje_1.velocity.y + wolkje_2.velocity.y)*1 );
-				var newRadius = wolkje_1.radius + wolkje_2.radius;
-
-				buyClouds.newClouds.push(new Cloud(newLocation, newVelocity, newRadius ));
-
-				buyClouds.Clouds.splice(j, 1);
-				buyClouds.Clouds.splice(i, 1);
-			}
-
-			j++;
-		}
-		
-		i++;
-	}
-
-	buyClouds.newClouds.map( newCloud => {
-		buyClouds.Clouds.push(newCloud);
-	})
-	buyClouds.newClouds = [];
-	
-	buyClouds.Clouds.map( cloud => {
-		cloud.update();
-		cloud.display();
-	})
-}
-
-function windowResized() {
-	resizeCanvas( buyClouds.targetElementDimensions()[0], buyClouds.targetElementDimensions()[1] );
-}
-
-/*
-Make cloud appear on mouse click
-function mousePressed() {
-	var location = createVector(mouseX, mouseY);
-	var velocity = createVector(random(-buyClouds.velocityScale, buyClouds.velocityScale), random(-buyClouds.velocityScale, buyClouds.velocityScale));
-	var radius = buyClouds.radius * random(0.97, 1.03);
-	var image = buyClouds.images[parseInt(Math.random()*buyClouds.images.length)];
-	buyClouds.newClouds.push( new Cloud(location, velocity, radius) );
-}
-*/
-
-class Cloud {
-	constructor( location, velocity, radius ) {
-		this.location = location;
-		this.velocity = velocity;
-		this.radius = radius;
-
-
-		this.update = function() {
-			location.x += velocity.x;
-			location.y += velocity.y;
-			this.wrapEdges();
 		}
 
-		this.display = function() {
-			// select image based on speed
-			var velocity2d = min( abs( mag(velocity.x, velocity.y)), buyClouds.expectedVmax );
-			var index = int(map( velocity2d, 0, buyClouds.expectedVmax, 0, buyClouds.images.length-1 ));
+		function draw() {
+			background( buyClouds.backgroundColor);
 
-			var imageObj = buyClouds.images[ index ];
-			var imgWidth = imageObj.width / 300 * radius;
-			var imgHeight = imageObj.height / 300 * radius;
-
-			// show the image
-			image( imageObj, location.x - imgWidth/2, location.y - imgHeight/2, imgWidth, imgHeight);
-
-			// show the ellipse 'hitzone' for debugging
-			if ( buyClouds.hitzoneDisplay === true ) {
-				fill(128);
-				ellipse(location.x, location.y, radius, radius)
-			};
+			buyClouds.Clouds.map( cloud => {
+				cloud.update();
+				cloud.display();
+			})
 		}
 
-		this.wrapEdges = function() {
-			var safearea = buyClouds.safeareaFactor * radius;
-			if ( location.x <= 0 - safearea) {
-				 location.x = width + safearea;
-			}
-			if ( location.x > width + safearea) {
-				 location.x = 0 - safearea;
-			}
-			if ( location.y <= 0 - safearea) {
-				 location.y = height + safearea;
-			}
-			if ( location.y > height + safearea) {
-				 location.y = 0 - safearea;
-			}
+		function windowResized() {
+			resizeCanvas( buyClouds.targetElementDimensions()[0], buyClouds.targetElementDimensions()[1] );
 		}
 
-		this.getLoc = function() {
-			return location;
+
+		class Cloud {
+			constructor( location, velocity, radius, imageObj, t0 ) {
+				// location : 2d vector
+				// velocity : 2d vector
+				// radius : int
+				// image : imageObject
+				// t0 : unicode time value ?????
+
+				this.location = location; // x0, y0
+				this.velocity = velocity;
+				this.radius = radius;
+
+				var newLocation = createVector();
+				var safearea = buyClouds.safeareaFactor * radius;
+
+
+				this.update = function() {
+					var age = (buyClouds.date + millis()) / 100;
+
+					// from example
+					// newLocation.x = ( location.x + velocity.x * age ) % width;
+					// newLocation.y = ( location.y + velocity.y * age ) % height;
+
+					// version with safe area for images
+					newLocation.x = ( -safearea + location.x + velocity.x * age ) % (width + safearea);
+					newLocation.y = ( -safearea + location.y + velocity.y * age ) % (height + safearea);
+					
+
+				}
+
+				this.display = function() {
+					// load the image
+					var imgWidth = imageObj.width / 300 * radius;
+					var imgHeight = imageObj.height / 300 * radius;
+
+					// show the image
+					image( imageObj, newLocation.x - imgWidth/2, newLocation.y - imgHeight/2, imgWidth, imgHeight);
+
+					// show the ellipse 'hitzone' for debugging
+					if ( buyClouds.hitzoneDisplay === true ) {
+						fill(128);
+						ellipse(newLocation.x, newLocation.y, radius, radius)
+					};
+				}
+			}
 		}
-
-		this.getVel = function() {
-			return velocity;
-		}
-	}
-
-}
-
-
-</script>
+	</script>
 
     
     
