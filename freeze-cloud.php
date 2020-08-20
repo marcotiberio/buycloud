@@ -46,17 +46,17 @@ get_header(); ?>
 			To own is to interact<br>Unite your data with the cloud
 		</p>
 
+    <p id="makeSure">
+			make sure you submit before paying
+		</p>
+
         <div class="form">
             <?php the_field('test_form'); ?>
         </div>
 		  
 		<p id="declaration">
-          read declaration
-        </p>
-		  
-		<p id="makeSure">
-			make sure you submit before paying
-		</p>
+      read declaration
+    </p>
 
         <button class="button" id="payment">
           <?php the_field('paypal_button'); ?>
