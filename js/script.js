@@ -8,6 +8,15 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#declarationSoldout").click(function(){
+        $("#modalManifestosoldout").show();
+    });
+    $("#closeManifestosoldout").click(function(){
+        $("#modalManifestosoldout").hide();
+    });
+});
+
 
 // Go Back One Page
 function goBack() {

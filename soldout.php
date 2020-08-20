@@ -13,6 +13,15 @@ get_header(); ?>
       </p>
     </section>
 
+
+  <!-- Modal Manifesto Sold Out-->
+  <div id="modalManifestosoldout" class="modal">
+        <div class="modal-content">
+            <span id="closeManifestosoldout">&times;</span>
+            <img src="https://www.buycloud.space/wp-content/uploads/2020/08/Declaration.png" alt="">
+        </div>
+    </div>
+
     
     
 <?php
