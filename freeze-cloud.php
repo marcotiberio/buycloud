@@ -33,7 +33,13 @@ get_header(); ?>
             <p><?php the_field('estimated_energy'); ?></p>
             <p><?php the_field('temperature'); ?></p>
           </div>
+          <div class="noaa">
+            <p>source: buycloud.space, NOAA.gov</p>
+          </div>
         </div>
+
+
+
 
 		  
 		<p id="ownInteract">
