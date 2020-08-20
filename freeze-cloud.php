@@ -42,13 +42,14 @@ get_header(); ?>
 
 
 		  
-		<p id="ownInteract">
-			To own is to interact<br>Unite your data with the cloud
-		</p>
+		<div id="ownInteract">
+			<p>To own is to interact<br>Unite your data with the cloud<p>
+      <p>make sure you submit before paying</p>
+		</div>
 
-    <p id="makeSure">
+    <!-- <p id="makeSure">
 			make sure you submit before paying
-		</p>
+		</p> -->
 
         <div class="form">
             <?php the_field('test_form'); ?>
