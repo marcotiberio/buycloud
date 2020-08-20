@@ -69,7 +69,7 @@ get_header(); ?>
     <div id="modalManifesto" class="modal">
         <div class="modal-content">
             <span id="closeManifesto">&times;</span>
-            <p><?php the_field('manifesto'); ?></p>
+            <img src="https://www.buycloud.space/wp-content/uploads/2020/08/Declaration.png" alt="">
         </div>
     </div>
 
