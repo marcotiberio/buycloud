@@ -1,5 +1,5 @@
 <?php 
-	/* Template Name: Payment */
+	/* Template Name: Failed Payment */
 
 get_header(); ?>
 
